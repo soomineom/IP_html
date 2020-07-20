@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h2>Click in and out of these fields</h2>
+    <input id='first'> <input> <input> <input>
+    <script>
+      $('#first').focus()
+      $('input').focus(function() { $(this).css('background', '#ff0') } )
+      $('input').blur(function() { $(this).css('background', '#aaa') } )
+    </script>
+  </body>
+</html>
